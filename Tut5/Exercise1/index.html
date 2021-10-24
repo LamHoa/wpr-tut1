@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise01</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        header{
+            font-family: 'Lora', serif;
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Materials/header.jpg');
+            background-repeat: no-repeat;
+            height: 600px;
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .container{
+            max-width: 1140px;
+            margin: auto;
+        }
+        
+        nav{
+            padding: 20px;
+            position: relative;
+        }
+
+        header p{
+            font-size: 40px;
+        }
+
+        header ul{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        list{
+            margin: 0 15px 0 15px;
+        }
+
+        .border{
+            border: 1px solid white;
+            padding: 10px 15px;
+            border-radius: 100px;
+            margin-right: -15px;
+            transition: 0.3s;
+        }
+
+        .border:hover{
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        #title {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .sustain{
+            font-style: italic;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .title{
+            font-size: 73px;
+            letter-spacing: 5px;
+            margin-bottom: 5px;
+        }
+
+        .grey{
+            border-radius: 100px;
+            background-color: rgb(54, 179, 168);
+            font-size: 19px;
+            padding: 10px 15px;
+            margin:  0 300px;
+        }
+
+        .grey:hover{
+            background-color: rgba(54, 179, 168, 0.6);
+            cursor: pointer;
+        }
+
+        main{
+            font-family: 'Open Sans', sans-serif;
+            padding: 100px 0;
+            padding-bottom: 100px;
+        }
+        
+        .statement{
+            text-align: center;
+            margin-bottom: 125px;
+        }
+        
+        .prom{
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 36px;
+        }
+
+        .cont{
+            width: 60%;
+            line-height: 36px;
+            margin: auto;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .album-item:first-child{
+            width: calc((100% - 70px) / 2);
+            float: left;
+        }
+
+        .album-item{
+            width: calc((100% - 70px) / 2);
+            float: right;
+            text-align: center;
+        }
+
+        main h1{
+            color: rgb(61, 153, 145);
+            margin: 24px 0;
+            letter-spacing: 4px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .album-content p{
+            line-height: 36px;
+        }
+
+        .clearfix{
+            clear: both;
+        }
+
+        footer{
+            background-color: #1D1F1F;
+            padding: 75px 238px;
+            text-align: center;
+        }
+        
+        .line1{
+            letter-spacing: 1px;
+            font: 14px 'Open Sans', sans-serif;
+            margin-bottom: 16px;
+            color: white;
+        }
+
+        .line2{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <p>CS 193x</p>
+                <ul>
+                    <list>HOME</list>
+                    <list>ABOUT</list>
+                    <list>NEWS</list>
+                    <list>READ ME</list>
+                    <list class="border">TAKE ACTIONS</list>
+                </ul>
+            </nav>
+            <div id="title">
+                <p class="sustain">Sustainability</p>
+                <p class="title">STARTS WITH YOU</p>
+                <p class="grey">LEARN MORE</p>
+            </div>
+        </div>    
+    </header>
+    <main class="container">
+        <div class="statement">
+            <p class="prom">We conserve land through outreach, restoration, and research.</p>
+            <p class="cont">
+                Some of the Earth's greastest landscape are threatened by increased road
+                construction, oil and gas exploration, and mining. We aim to protect these areas from
+                inappropriate development, but we cannot achieve our goals alone. Find out how you
+                can help.
+            </p>
+        </div>
+        <div class="album">
+            <div class="album-item">
+                <img src="Materials/body-image-1.jpg" alt="body-1">
+                <div class="album-content">
+                    <h1>About</h1>
+                    <p>Find out about our organization, mission, our methods, and the results of our decades of advocacy.</p>
+                </div>
+            </div>
+            <div class="album-item">
+                <img src="Materials/body-image-2.jpg" alt="body-2">
+                <div class="album-content">
+                    <h1>Take actions</h1>
+                    <p>Ready to take the next step? You can become a contributor to our cause, or participate yourself</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>    
+        </div>
+    </main>
+    <footer class="container">
+        <p class="line1">CS193X, SHRIRAM CENTER 104</p>
+        <p class="line2">Powered by competence</p>
+    </footer>
+</body>
+</html>

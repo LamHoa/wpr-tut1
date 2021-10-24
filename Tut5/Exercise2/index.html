@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise02</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #a9d7d1;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        
+        section{
+        background-color: white;
+        margin: 0 20px 15px 20px;
+        }
+
+        p{
+            margin: 0;
+            padding: 25px 0 10px 0;
+        }
+        
+        table{
+            border-spacing: 15px;
+            width: 100%;
+        }
+
+        .colleft{
+            width: 50%;
+        }
+        
+        .colright{
+            width: 50%;
+        }
+        
+        .left{
+            padding-left: 25%;
+            text-align: right;
+        }
+
+        .top{
+            vertical-align: top;
+        }
+
+        td{
+            text-align: left;
+        }
+
+        #recommend, #improve{
+            margin: 6px;
+        }
+
+        input[type=text], input[type=number], select{
+            padding: 3px;
+        }
+        
+        select{
+            padding-right: 8px;
+            
+        }
+
+        textarea{
+            width: 36%;
+            height: 45px;
+        }
+        
+        .comment td{
+            padding-top: 10px;
+        }
+
+        button{
+            color: white;
+            background-color: #59ace0;
+            border: #59ace0;
+            padding: 5px 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <section>
+        <p>Let us know how we can improve FreeCodeCamp</p>
+        <table>
+            <col class="colleft">
+            <col class="colright">
+            <tr>
+                <td class="left">* Name:</td>
+                <td>
+                    <input type="text" name="name" placeholder="Enter your name">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">* Email:</td>
+                <td>
+                    <input type="text" name="email" placeholder="Enter your Email">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">* Age:</td>
+                <td>
+                    <input type="number" name="age" placeholder="Age">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">Which option best describes your current role:</td>
+                <td>
+                    <select name="role">
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Worker">Worker</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="selector"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="left top">
+                    <label for="recommend">How likely is that you would recommend freeCodeCamp to a friend?</label> 
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" id="recommend" name="Definitely">Definitely<br>
+                    </label>
+                    <label>
+                        <input type="radio" id="recommend" name="Maybe">Maybe<br>
+                    </label>
+                    <label>
+                        <input type="radio" id="recommend" name="Not sure">Not sure
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">What do you like most in FCC</td>
+                <td>
+                    <select name="like">
+                        <option value="Select an option">Select an option</option>
+                        <option value="Versatility">Versatility</option>
+                        <option value="Variety">Variety</option>
+                        <option value="Accessibility">Accessibility</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="selector"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="left top">
+                    <label for="improve">Things that should be improved in the future (Check all that apply)</label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" id="improve" name="Front-end Projects">Front-end Projects<br>
+                    </label> 
+                    <label>
+                        <input type="checkbox" id="improve" name="Back-end Projects">Back-end Projects<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="Data visualization">Data visualization<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="Challengers">Challengers<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="Open Source Community">Open Source Community<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="Gitter help roams">Gitter help roams<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="Videos">Videos<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="City meetups">City meetups<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="Wiki">Wiki<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="Forum">Forum<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="improve" name="Additional Courses">Additional Courses
+                    </label>
+                </td>
+            </tr>
+            <tr class="comment">
+                <td class="left top">Any comments or Suggestion?</td>
+                <td>
+                    <textarea name="comment" placeholder="Enter your comment here..."></textarea>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Submit</button>    
+    </section>
+</body>
+</html>
