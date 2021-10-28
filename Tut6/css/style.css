@@ -1,0 +1,118 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: jose;
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 28%;
+}
+
+nav {
+  float: left;
+  width: 22%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  padding: 20px;
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: jose;
+  src: url(../assets/static/JosefinSlab-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: jose;
+  src: url(../assets/static/JosefinSlab-Bold.ttf);
+  font-weight: 700;
+}
+
+header{
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+p{
+  text-indent: 20px;
+}
+
+section p:nth-child(7), section p:nth-child(3){
+  text-indent: 0;
+}
+
+p, li, footer{
+  line-height: 17px;
+  font-size: 14px;
+}
+
+a{
+  color: #a66;
+}
+
+a:focus, a:hover, a:visited{
+  text-decoration: none;
+  outline: none;
+}
+
+img{
+  width: 10px;
+}
+
+ol{
+  list-style-type: lower-alpha;
+}
+
+aside ul{
+  list-style-type: square;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  border: 2px solid #a66;
+  text-align: center;
+  padding: 20px 0;
+  width: 220px;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+nav a:hover, nav a:active, nav a:focus{
+  background-color: #a66;
+  color: white;
+}
