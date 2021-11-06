@@ -67,7 +67,7 @@ p{
   text-indent: 20px;
 }
 
-section p:nth-child(7), section p:nth-child(3){
+section :nth-child(7), section :nth-child(3){
   text-indent: 0;
 }
 
@@ -80,13 +80,13 @@ a{
   color: #a66;
 }
 
-a:focus, a:hover, a:visited{
+a:hover, a:active, a:visited{
   text-decoration: none;
-  outline: none;
 }
 
-img{
-  width: 10px;
+a:focus{
+  outline: 2px solid #a66;
+  outline-offset: 2px;
 }
 
 ol{
@@ -115,4 +115,14 @@ nav a{
 nav a:hover, nav a:active, nav a:focus{
   background-color: #a66;
   color: white;
+}
+
+
+section p a::after{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  content: "";
+  background: url(../images/external-link-52.png) no-repeat 0 0;
+  background-size: 10px 10px;
 }
