@@ -12,7 +12,13 @@
         while (!value.match(/^[0-9]+$/)) {
             value = prompt('Nhap vao 1 so');
         }
-        alert('success');
+        let inNumber = 0;
+        while (value != 0) {
+            let remain = value % 10;
+            inNumber = (inNumber * 10) + remain;
+            value = parseInt(value/10);
+        }
+        alert('So dao nguoc la ' + inNumber);
     </script>
 </body>
 </html>
