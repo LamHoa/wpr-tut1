@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <form action="#" method="post" class="container">
+        <table>
+            <tr>
+                <th>
+                    <label for="amount">Amount</label>
+                </th>
+                <th>
+                    <label class="margin-left" for="from">From Currency</label>
+                </th>
+                <th>
+                    <label class="margin-left" for="to">To Currency</label>
+                </th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="amount" name="amount" value="1">
+                </td>
+                <td>
+                    <select name="from" id="from">
+                        <option value="VND">VND</option>
+                        <option value="USD">USD</option>
+                    </select>        
+                </td>
+                <td>
+                    <select name="to" id="to">
+                        <option value="USD">USD</option>
+                        <option value="VND">VND</option>
+                    </select>        
+                </td>
+                <td>
+                    <button onclick="convert()">Convert</button>
+                </td>
+            </tr>
+        </table>
+        <p>Result: <span id="result"></span></p>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

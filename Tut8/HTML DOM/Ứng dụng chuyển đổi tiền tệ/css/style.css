@@ -1,0 +1,29 @@
+select{
+    width: 120px;
+    height: 22px;
+    margin-left: 64px;
+}
+
+.margin-left{
+    margin-left: 64px;
+}
+
+button{
+    color: white;
+    background-color: rgb(120, 120, 211);
+    font: bold 14px sans-serif;
+    border-radius: 2.5px;
+    border: white;
+    height: 23px;
+    width: 80px;
+    margin-left: 32px;
+}
+
+button:hover{
+    background-color: rgb(82, 82, 122);
+    cursor: pointer;
+}
+
+p{
+    color: blue;
+}
