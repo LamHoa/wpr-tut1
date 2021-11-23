@@ -7,9 +7,40 @@
     <title>Number Guessing</title>
 </head>
 <body>
-    <button onclick="">Chơi</button>
+    <button onclick="startGame()">Chơi</button>
     <script>
-        
+        function startGame() {
+            let endNumberInput = '';
+            let guessNumberInput = '';
+            let win = false;
+            let turn = 2;
+            while (endNumberInput == '' || isNaN(endNumberInput) == true) {
+                endNumberInput = prompt('Enter the interval start from 0'); 
+            }
+            let endNumber = parseInt(endNumberInput);
+            let randomNumber = Math.floor(Math.random() * endNumber);
+            while (guessNumberInput == '' || isNaN(guessNumberInput) == true) {
+                guessNumberInput = prompt('Guess the number in the interval');
+            }
+            for (let i = 0; i < 2; i++) {
+                if (guessNumberInput == randomNumber) {
+                    win = true;
+                    break;
+                } else {
+                    alert('You have '+ turn +' more turn(s)');
+                    turn--;
+                    guessNumberInput = prompt('Guess the number in the interval');
+                }
+            }
+            switch (win) {
+                case false:
+                    alert('You lost the game'); 
+                    break;
+                default:
+                    alert('You won the game'); 
+                    break;
+            }
+        }
     </script>
 </body>
 </html>
