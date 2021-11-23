@@ -1,5 +1,5 @@
 let screen = document.getElementById('screen');
-
+ 
 function pushBtn(obj){
     let push = obj.innerHTML;
     if (push == '=') {
