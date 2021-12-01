@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap5</title>
+    <link rel="stylesheet" href="../assets/bootstrap513/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap513/js/bootstrap.min.js">
+</head>
+<body>
+    <form id="form" action="#" method="post" class=container-fluid>
+        <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+        </div>
+        <div class="mb-3">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="male" id="male" value="Male" onclick="genderValue(this)">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="female" id="female" value="Female" onclick="genderValue(this)">
+                <label class="form-check-label" for="female">Female</label>
+            </div>    
+        </div>
+        <div class="mb-3">
+            <input type="date" class="form-control" id="date">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div id="display"></div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
